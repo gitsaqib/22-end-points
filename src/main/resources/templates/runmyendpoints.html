@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>
+			Run My end points
+		</title>
+		<style>
+			table, th, td {
+			    border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>
+			Do not repeat yourself
+		</h1>
+		<table border="1" >
+			<tr>
+				<th>
+					Http Method
+				</th>
+				<th>
+					End Point
+				</th>
+				<th>
+					Payload
+				</th>
+				<th>
+					Results (S/W/F/E)
+					<br />
+					Success/Warning/Failure/Error
+				</th>
+				<th></th>
+			</tr>
+			<tr th:each="result : ${results}">
+				<td th:text="${result.httpMethod}" />
+				<td th:text="${result.requestURL}" />
+				<td th:text="${result.payload}" />
+				<td th:text="${result.result}" />
+				<td th:text="${result.resultDetails}"/>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+#POST	/api/lines	{"id":"1016","lineStatus":"{LINESTATUS}","lineName":"{LINENAME}","comcastUserGuid":"{COMCASTUSERGUID}","accountId":"{ACCOUNTID}","mdn":"{MDN}","imei":"{IMEI}","iccid":"{ICCID}","WIFIMAC":"{WIFIMAC}","imsi":"{IMSI}","meid":"{MEID}","explicitActivation":false}
+GET	/api/lines/{LINEID}
+#PUT	/api/lines/{LINEID}	{"id":"{LINEID}","lineStatus":"{LINESTATUS}","lineName":"updated-{LINENAME}","comcastUserGuid":"{COMCASTUSERGUID}","accountId":"{ACCOUNTID}","mdn":"{MDN}","imei":"{IMEI}","iccid":"{ICCID}","WIFIMAC":"{WIFIMAC}","imsi":"{IMSI}","meid":"{MEID}","explicitActivation":false}
+#POST	/api/account/{ACCOUNTID}/line/{LINEID}/activate/{MDN}
+#PUT	/api/lines/{LINEID}/swap	{"id":"1015","lineStatus":"{LINESTATUS}","lineName":"{LINENAME}","comcastUserGuid":"{COMCASTUSERGUID}","accountId":"{ACCOUNTID}","mdn":"{MDN}","imei":"{IMEI}","iccid":"{ICCID}","WIFIMAC":"{WIFIMAC}","imsi":"{IMSI}","meid":"{MEID}","explicitActivation":false}
+#*PUT	/api/lines/simcard	{"iccid": "{ICCID}", "imsi": "{IMSI}"}
+#GET	/api/lines/userguid/{COMCASTUSERGUID}
+#GET	/api/lines/simcard/{ICCID}
+#GET	/api/lines/mdn/{MDN}
+#GET	/api/lines/macaddress/{WIFIMAC}
+#GET	/api/lines/imsi/{IMSI}
+#GET	/api/lines/imei/{IMEI}
+#GET	/api/lines/accountguid/{ACCOUNTID}
+#DELETE	/api/lines/account/{ACCOUNTID}
+##PUT	/api/lines/{lineId}/feature
+##PUT	/api/lines/policyServer	{"imsi": "{IMSI}"}
+##GET	/api/{LINEID}/mailbox
+##GET	/api/verification/line/{LINEID}
+#GET	/api/profile-info
+##GET	/api/lines/{lineId}/features
+##GET	/api/lines/carrier/{LINEID}
+##DELETE	/api/vm/reset/{MDN}/pin
