@@ -1,0 +1,3 @@
+POST	/api/	{"id":"1016","lineStatus":"{LINESTATUS}"}
+GET	/api/{LINEID}
+#POST	/api/account/{ACCOUNTID}/ {"id":"1016","lineStatus":"{LINESTATUS}"}
